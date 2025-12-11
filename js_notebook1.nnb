@@ -105,18 +105,83 @@
             ]
         },
         {
-            "language": "typescript",
+            "language": "markdown",
             "source": [
-                ""
+                "# console.clear()\n\n- A graphical console, like those in web browsers, will remove all previous messages; a console displaying on a terminal, like the one in Node.js, will attempt to clear it using an escape code or system API; otherwise the method will have no effect (and no error).\n"
             ],
             "outputs": []
         },
         {
             "language": "typescript",
             "source": [
-                ""
+                "//Can be tested in developer tools console. I used it and the console was cleared.\nconsole.clear();\n"
             ],
             "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console.count() static method\n\n- The console.count() static method logs the number of times that this particular call to count() has been called.\n  [Reference](https://developer.mozilla.org/en-US/docs/Web/API/console/count_static)\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "coffeescript",
+            "source": [
+                "# console.count()\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function greet(user) {\n  console.count();\n  return `hi ${user}`;\n}\n\ngreet(\"bob\");\ngreet(\"alice\");\ngreet();\nconsole.count();\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "default: 9",
+                                "default: 10",
+                                "default: 11",
+                                "default: 12",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console: countReset() static method\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function message(user) {\n  console.count();\n  return `hi ${user} , please bring your umbrella tomorrow as it may rain.`;\n}\n\nmessage(\"bob\");\nmessage(\"alice\");\nmessage(\"alice\");\nconsole.count();\nconsole.countReset();\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "default: 1",
+                                "default: 2",
+                                "default: 3",
+                                "default: 4",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
