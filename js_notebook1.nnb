@@ -54,11 +54,55 @@
             ]
         },
         {
+            "language": "markdown",
+            "source": [
+                "# console.assert()\n\n- The console.assert() static method writes an error message to the console if the assertion is false. If the assertion is true, nothing happens.\n"
+            ],
+            "outputs": []
+        },
+        {
             "language": "typescript",
             "source": [
                 "//Reference : https://developer.mozilla.org/en-US/docs/Web/API/console/assert_static\nconst errorMsg = \"the # is not even\";\nfor (let number = 2; number <= 5; number++) {\n  console.log(`the # is ${number}`);\n  console.assert(number % 2 === 0, \"%o\", { number, errorMsg });\n}\n// output:\n// the # is 2\n// the # is 3\n// Assertion failed: {number: 3, errorMsg: \"the # is not even\"}\n// the # is 4\n// the # is 5\n// Assertion failed: {number: 5, errorMsg: \"the # is not even\"}\n"
             ],
-            "outputs": []
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stderr",
+                            "value": [
+                                "the # is 2",
+                                "the # is 3",
+                                "Assertion failed: { number: 5, errorMsg: 'the # is not even' }",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stderr",
+                            "value": [
+                                "Assertion failed: { number: 3, errorMsg: 'the # is not even' }",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "the # is 4",
+                                "the # is 5",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "language": "typescript",
