@@ -1,0 +1,78 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Console\n\n- The console is a panel that displays important messages, like\n  errors, for developers.\n- Much of the work the computer does with our code is invisible to us by default.\n- If we want to see things appear on our screen, we can directly print or log to our console.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//console.log();\n//The semicolon denotes the end of the line or statement\n//This example logs 5 to the console.\nconsole.log(5);\n//This example logs 10 to the console\nconsole.log(10);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "5",
+                                "10",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let array = [5, 6, 7];\nconsole.log(array);\nconsole.table(array);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 5, 6, 7 ]",
+                                "┌─────────┬────────┐",
+                                "│ (index) │ Values │",
+                                "├─────────┼────────┤",
+                                "│ 0       │ 5      │",
+                                "│ 1       │ 6      │",
+                                "│ 2       │ 7      │",
+                                "└─────────┴────────┘",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//Reference : https://developer.mozilla.org/en-US/docs/Web/API/console/assert_static\nconst errorMsg = \"the # is not even\";\nfor (let number = 2; number <= 5; number++) {\n  console.log(`the # is ${number}`);\n  console.assert(number % 2 === 0, \"%o\", { number, errorMsg });\n}\n// output:\n// the # is 2\n// the # is 3\n// Assertion failed: {number: 3, errorMsg: \"the # is not even\"}\n// the # is 4\n// the # is 5\n// Assertion failed: {number: 5, errorMsg: \"the # is not even\"}\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}
