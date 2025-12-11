@@ -1,0 +1,25 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Comments in JavaScript\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// This is a single line comment\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "/*\nThis is\na multi-line \ncomment\n*/\n"
+            ],
+            "outputs": []
+        }
+    ]
+}
