@@ -1,0 +1,302 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "#Codecademy\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(5); // Prints 5\nconsole.log(10); // Prints 10\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "5",
+                                "10",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(/*IGNORED!*/ 5); // Still just prints 5\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "5",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(\"JavaScript\");\nconsole.log(2011);\nconsole.log(\"Woohoo! I love to code! #codecademy\");\nconsole.log(20.49);\nconsole.log(40);\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(11 + 3.5);\nconsole.log(2025 - 1969);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "14.5",
+                                "27.08",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(65 / 240);\nconsole.log(0.2708 * 100);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "0.2708333333333333",
+                                "27.08",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(\"hi\" + \"ya\"); // Prints 'hiya'\nconsole.log(\"wo\" + \"ah\"); // Prints 'woah'\nconsole.log(\"I love to \" + \"code.\");\n// Prints 'I love to code.'\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "hiya",
+                                "woah",
+                                "I love to code.",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(\"front \" + \"space\");\n// Prints 'front space'\nconsole.log(\"back\" + \" space\");\n// Prints 'back space'\nconsole.log(\"no\" + \"space\");\n// Prints 'nospace'\nconsole.log(\"middle\" + \" \" + \"space\");\n// Prints 'middle space'\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "front space",
+                                "back space",
+                                "nospace",
+                                "middle space",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(\"One\" + \", \" + \"two\" + \", \" + \"three!\");\n// Prints 'One, two, three!'\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(\"Hello\".length); // Prints 5\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(\"hello\".toUpperCase()); // Prints 'HELLO'\nconsole.log(\"Hey\".startsWith(\"H\")); // Prints true\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "HELLO",
+                                "true",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// Use .toUpperCase() to log 'Codecademy' in all uppercase letters\nconsole.log(\"Codecademy\".toUpperCase());\n\n// Use a string method to log the following string without whitespace at the beginning and end of it.\nconsole.log(\"    Remove whitespace   \".trim());\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "CODECADEMY",
+                                "Remove whitespace",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(Math.random()); // Prints a random number between 0 and 1\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "0.872123760342133",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(Math.random() * 50);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "1.1993710464411222",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Math.floor() takes a decimal number and rounds it down to the nearest whole number. Math.floor() can be used to round down a random number like this:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(Math.floor(Math.random() * 50);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "29",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(\"Hello, World\");\n//This is a one line comment\n/*This is\na multi-line\ncomment */\nitems = [\"Apples\", \"Bananas\", \"Cherries\", \"Dragonfruit\"];\nconsole.log(items);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Hello, World",
+                                "[ 'Apples', 'Bananas', 'Cherries', 'Dragonfruit' ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(100);\nconsole.log(121656987123);\nconsole.log(\"This is a string.\");\nconsole.log(true);\nconsole.log(undefined);\n// Create a Symbol\nconst mySymbol = Symbol();\n\nconsole.log(mySymbol);\n// expected output: Symbol()\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "100",
+                                "121656987123",
+                                "This is a string.",
+                                "true",
+                                "undefined",
+                                "Symbol()",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
