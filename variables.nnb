@@ -3,14 +3,14 @@
         {
             "language": "markdown",
             "source": [
-                "# Console\n\n- The console is a panel that displays important messages, like\n  errors, for developers.\n- Much of the work the computer does with our code is invisible to us by default.\n- If we want to see things appear on our screen, we can directly print or log to our console.\n"
+                "# Variables\n\n- In programming, a variable is a container for a value. We can think of\n  variables\n  Preview: Docs Variables are used to store a piece of data at a named location in memory.\n  as little containers for information that live in a computer’s memory.\n- Information stored in variables, such as a username, account number, or personalized greeting, can then be found in memory\n- Variables also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves.\n"
             ],
             "outputs": []
         },
         {
             "language": "typescript",
             "source": [
-                "//console.log();\n//The semicolon denotes the end of the line or statement\n//This example logs 5 to the console.\nconsole.log(5);\n//This example logs 10 to the console\nconsole.log(10);\n"
+                "var myName = \"Arya\";\nconsole.log(myName);\n// Output: Arya\n"
             ],
             "outputs": [
                 {
@@ -18,8 +18,7 @@
                         {
                             "mime": "application/vnd.code.notebook.stdout",
                             "value": [
-                                "5",
-                                "10",
+                                "Arya",
                                 ""
                             ]
                         }
@@ -30,7 +29,7 @@
         {
             "language": "typescript",
             "source": [
-                "let array = [5, 6, 7];\nconsole.log(array);\nconsole.table(array);\n"
+                "var favoriteFood = \"pizza\";\nvar numOfSlices = 8;\nconsole.log(favoriteFood);\nconsole.log(numOfSlices);\n"
             ],
             "outputs": [
                 {
@@ -38,14 +37,8 @@
                         {
                             "mime": "application/vnd.code.notebook.stdout",
                             "value": [
-                                "[ 5, 6, 7 ]",
-                                "┌─────────┬────────┐",
-                                "│ (index) │ Values │",
-                                "├─────────┼────────┤",
-                                "│ 0       │ 5      │",
-                                "│ 1       │ 6      │",
-                                "│ 2       │ 7      │",
-                                "└─────────┴────────┘",
+                                "pizza",
+                                "8",
                                 ""
                             ]
                         }
@@ -56,47 +49,62 @@
         {
             "language": "markdown",
             "source": [
-                "# console.assert()\n\n- The console.assert() static method writes an error message to the console if the assertion is false. If the assertion is true, nothing happens.\n"
+                "# var\n\n- var, short for variable, is a JavaScript keyword that creates, or declares, a new variable.\n"
             ],
             "outputs": []
         },
         {
             "language": "typescript",
             "source": [
-                "//Reference : https://developer.mozilla.org/en-US/docs/Web/API/console/assert_static\nconst errorMsg = \"the # is not even\";\nfor (let number = 2; number <= 5; number++) {\n  console.log(`the # is ${number}`);\n  console.assert(number % 2 === 0, \"%o\", { number, errorMsg });\n}\n// output:\n// the # is 2\n// the # is 3\n// Assertion failed: {number: 3, errorMsg: \"the # is not even\"}\n// the # is 4\n// the # is 5\n// Assertion failed: {number: 5, errorMsg: \"the # is not even\"}\n"
+                "//let\nlet meal = \"Enchiladas\";\nconsole.log(meal); // Output: Enchiladas\nmeal = \"Burrito\";\nconsole.log(meal); // Output: Burrito\n"
             ],
             "outputs": [
                 {
                     "items": [
                         {
-                            "mime": "application/vnd.code.notebook.stderr",
+                            "mime": "application/vnd.code.notebook.stdout",
                             "value": [
-                                "the # is 2",
-                                "the # is 3",
-                                "Assertion failed: { number: 5, errorMsg: 'the # is not even' }",
+                                "Enchiladas",
+                                "Burrito",
                                 ""
                             ]
                         }
                     ]
-                },
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stderr",
-                            "value": [
-                                "Assertion failed: { number: 3, errorMsg: 'the # is not even' }",
-                                ""
-                            ]
-                        }
-                    ]
-                },
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let price;\nconsole.log(price); // Output: undefined\nprice = 350;\nconsole.log(price); // Output: 350\n"
+            ],
+            "outputs": [
                 {
                     "items": [
                         {
                             "mime": "application/vnd.code.notebook.stdout",
                             "value": [
-                                "the # is 4",
-                                "the # is 5",
+                                "undefined",
+                                "350",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let changeMe = true;\nchangeMe = false;\nconsole.log(changeMe);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "false",
                                 ""
                             ]
                         }
@@ -107,35 +115,14 @@
         {
             "language": "markdown",
             "source": [
-                "# console.clear()\n\n- A graphical console, like those in web browsers, will remove all previous messages; a console displaying on a terminal, like the one in Node.js, will attempt to clear it using an escape code or system API; otherwise the method will have no effect (and no error).\n"
+                "# const\n\n- The const keyword was also introduced in ES6, and is short for the word constant. Just like with var and let, we can store any value in a const variable. The way we declare a const variable and assign a value to it follows the same structure as let and var. Take a look at the following example:\n"
             ],
             "outputs": []
         },
         {
             "language": "typescript",
             "source": [
-                "//Can be tested in developer tools console. I used it and the console was cleared.\nconsole.clear();\n"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "# console.count() static method\n\n- The console.count() static method logs the number of times that this particular call to count() has been called.\n  [Reference](https://developer.mozilla.org/en-US/docs/Web/API/console/count_static)\n"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "coffeescript",
-            "source": [
-                "# console.count()\n"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "javascript",
-            "source": [
-                "function greet(user) {\n  console.count();\n  return `hi ${user}`;\n}\n\ngreet(\"bob\");\ngreet(\"alice\");\ngreet();\nconsole.count();\n"
+                "const myName = \"Gilberto\";\nconsole.log(myName); // Output: Gilberto\n"
             ],
             "outputs": [
                 {
@@ -143,10 +130,7 @@
                         {
                             "mime": "application/vnd.code.notebook.stdout",
                             "value": [
-                                "default: 9",
-                                "default: 10",
-                                "default: 11",
-                                "default: 12",
+                                "Gilberto",
                                 ""
                             ]
                         }
@@ -157,31 +141,16 @@
         {
             "language": "markdown",
             "source": [
-                "# console: countReset() static method\n"
+                "- However, a const variable cannot be reassigned because it is constant. If we try to reassign a const variable, we’ll get a TypeError.\n\n- Constant variables must be assigned a value when declared. If we try to declare a const variable without a value, we’ll get a SyntaxError.\n"
             ],
             "outputs": []
         },
         {
-            "language": "javascript",
+            "language": "typescript",
             "source": [
-                "function message(user) {\n  console.count();\n  return `hi ${user} , please bring your umbrella tomorrow as it may rain.`;\n}\n\nmessage(\"bob\");\nmessage(\"alice\");\nmessage(\"alice\");\nconsole.count();\nconsole.countReset();\n"
+                ""
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "default: 1",
-                                "default: 2",
-                                "default: 3",
-                                "default: 4",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         }
     ]
 }
