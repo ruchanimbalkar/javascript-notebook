@@ -1,0 +1,137 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Operators\n\n- Math operators\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let w = 4;\nw = w + 1;\n\nconsole.log(w); // Output: 5\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "5",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let w = 4;\nw += 1;\n\nconsole.log(w); // Output: 5\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "5",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let levelUp = 10;\nlet powerLevel = 9001;\nlet multiplyMe = 32;\nlet quarterMe = 1152;\n\n// Use the mathematical assignments in the space below:\nlevelUp += 5;\npowerLevel -= 100;\nmultiplyMe *= 11;\nquarterMe /= 4;\n\n// These console.log() statements below will help you check the values of the variables.\n// You do not need to edit these statements.\nconsole.log(\"The value of levelUp:\", levelUp);\nconsole.log(\"The value of powerLevel:\", powerLevel);\nconsole.log(\"The value of multiplyMe:\", multiplyMe);\nconsole.log(\"The value of quarterMe:\", quarterMe);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "The value of levelUp: 15",
+                                "The value of powerLevel: 8901",
+                                "The value of multiplyMe: 352",
+                                "The value of quarterMe: 288",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# increment operator\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let a = 10;\na++;\nconsole.log(a); // Output: 11\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "11",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# decrement operator\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let b = 20;\nb--;\nconsole.log(b); // Output: 19\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "19",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# typeof operator\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const unknown1 = \"foo\";\nconsole.log(typeof unknown1); // Output: string\n\nconst unknown2 = 10;\nconsole.log(typeof unknown2); // Output: number\n\nconst unknown3 = true;\nconsole.log(typeof unknown3); // Output: boolean\n"
+            ],
+            "outputs": []
+        }
+    ]
+}

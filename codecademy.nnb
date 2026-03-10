@@ -1,0 +1,437 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# What is JavaScript\n\nLast year, millions of learners from our community started with JavaScript. Why? JavaScript is primarily known as the language of most modern web browsers, and its early quirks gave it a bit of a bad reputation. However, the language has continued to evolve and improve. JavaScript is a powerful, flexible, and fast programming language now being used for increasingly complex web development and beyond!\n\nSince JavaScript remains at the core of web development, it’s often the first language learned by self-taught coders eager to learn and build. We’re excited for what you’ll be able to create with the JavaScript foundation you gain here. JavaScript powers the dynamic behavior on most websites, including this one.\n\nIn this lesson, you will learn introductory coding concepts, including\ndata types\nPreview: Docs Loading link description\nand built-in\nobjects\nPreview: Docs A data type for organizing a set of custom properties and behaviors.\n— essential knowledge for all aspiring developers. Make sure to take notes and pace yourself. This foundation will set you up for understanding the more complex concepts you’ll encounter later.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## console\n\nThe console is a panel that displays important messages, like\nerrors\nPreview: Docs Loading link description\n, for developers. Much of the work the computer does with our code is invisible to us by default. If we want to see things appear on our screen, we can directly print or log to our console.\n\nIn JavaScript, the console keyword refers to an object, a collection of data and actions, that we can use in our code. Keywords are words that are built into the JavaScript language, so the computer recognizes them and treats them specially.\n\nOne action, or method, built into the console object is the .log() method. When we write console.log(), what we put inside the parentheses will get printed, or logged, to the console.\n\nIt will be very useful for us to print values to the console so that we can see the work that we’re doing.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(5);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "5",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Comments\n\nProgramming is often highly collaborative. In addition, our own code can quickly become difficult to understand when we return to it — sometimes only an hour later! For these reasons, it’s often useful to leave notes in our code for other developers or ourselves.\n\nAs we write JavaScript, we can write\ncomments\nPreview: Docs A comment is a piece of text within a program that is not executed but provides additional information to aid in understanding the code.\nin our code that the computer will ignore as our program runs. These comments exist just for human readers.\n\nComments can explain what the code is doing, leave instructions for developers using the code, or add any other useful annotations.\n\nThere are two types of code comments in JavaScript:\n\nA single-line comment will comment out a single line and is denoted with two forward slashes // preceding it.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "// Prints 5 to the console\nconsole.log(5);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "5",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "A single-line comment may also be used after a line of code:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(5); // Prints 5\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "A multi-line comment will comment out multiple lines and is denoted with /_ to begin the comment, and _/ to end the comment.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "/*\nThis is all commented \nconsole.log(10);\nNone of this is going to run!\nconsole.log(99);\n*/\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "This syntax can also be used to comment something out in the middle of a line of code:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(/*IGNORED!*/ 5); // Still just prints 5\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Single-line comments are great for adding context to your code. Multi-line comments are often best suited to prevent a block of code from running. However, both types of comments can be used for either purpose.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Data Types\n\nData types are used to classify the different kinds of values used in programming.  \nIn JavaScript, there are **eight fundamental data types**, which include **primitive types** and **object types**.\n\n### 1. Number\n\nRepresents any numeric value, including integers and decimal numbers.\nAny number, including numbers with decimals: 4, 8, 1516, 23.42.\nExamples:\n\n- `4`\n- `8`\n- `1516`\n- `23.42`\n\n---\n\n### 2. BigInt\n\nRepresents very large integers that are **greater than `2^53 - 1` or less than `-(2^53 - 1)`**.\nAny number, greater than 253-1 or less than -(253-1), with n appended to the number: 1234567890123456n.\nA BigInt is created by adding **`n`** to the end of the number.\n\nExample:\n\n- `1234567890123456n`\n\n---\n\n### 3. String\n\nRepresents a sequence of characters such as letters, numbers, spaces, or symbols.\nAny grouping of characters on the keyboard (letters, numbers, spaces, symbols, etc.) surrounded by single quotes: ' ... ' or double quotes \" ... \", though we prefer single quotes. Some people like to think of string as a fancy word for text.\nStrings must be enclosed in **single quotes `' '`** or **double quotes `\" \"`**.\n\nExamples:\n\n- `'Hello'`\n- `\"JavaScript\"`\n- `'123 Main Street'`\n\nMany developers prefer **single quotes** for consistency.\n\n---\n\n### 4. Boolean\n\nA Boolean represents **one of two possible values**:\nThis data type only has two possible values — either true or false (without quotes). It’s helpful to think of booleans as on and off switches or as the answers to a “yes” or “no” question.\n\n- `true`\n- `false`\n\nBooleans are often used to represent **yes/no** or **on/off** conditions.\n\nExample:\n\n```javascript\ntrue;\nfalse;\n```\n\n### 5. Null\n\nThis data type represents the intentional absence of a value, and is represented by the keyword null (without quotes).\n\n### 6. Undefined:\n\nThis data type is denoted by the keyword undefined (without quotes). It also represents the absence of a value, though it has a different use than null. undefined means that a given value does not exist.\n\n### 7. Symbol:\n\nA newer feature of the language, symbols are unique identifiers that are useful in more complex coding. No need to worry about these for now.\n\n### 8. Object:\n\nCollections of related data.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "The first seven of those types are considered primitive data types. They are the most basic data types in the language. Objects are more complex, and we’ll learn much more about them as we progress through JavaScript. At first, eight types may not seem like that many, but soon we’ll observe how the world opens with possibilities once we start leveraging each one. As we learn more about objects, we’ll be able to create complex collections of data.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "In the example below, we first printed a string. Our string isn’t just a single word; it includes both capital and lowercase letters, spaces, and punctuation.\n\nNext, we printed the number 40, notice we did not use quotes.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"Location of Codecademy headquarters: 575 Broadway, New York City\");\nconsole.log(40);\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Arithmetic Operators\n\nBasic arithmetic often comes in handy when programming.\n\nAn\noperator\nPreview: Docs An operator is a special character or series of characters that perform a task in JavaScript.\nis a character that performs a task in our code. JavaScript has several built-in arithmetic operators, that allow us to perform mathematical calculations on numbers. These include the following operators and their corresponding symbols:\n\nAdd: +\nSubtract: -\nMultiply: \\*\nDivide: /\nRemainder: %\nThe first four work as one might assume:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(3 + 4); // Prints 7\nconsole.log(5 - 1); // Prints 4\nconsole.log(4 * 2); // Prints 8\nconsole.log(9 / 3); // Prints 3\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "7",
+                                "4",
+                                "8",
+                                "3",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Note that when we console.log(), the computer will evaluate the expression inside the parentheses and print that result to the console. If we wanted to print the characters 3 + 4, we would wrap them in quotes and print them as a string.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## The Remainder Operator\n\nThe remainder operator, sometimes called modulo, returns the number that remains after the right-hand number divides into the left-hand number as many times as it evenly can: 11 % 3 equals 2 because 3 fits into 11 three times, leaving 2 as the remainder.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(11 % 3); // Prints 2\nconsole.log(12 % 3); // Prints 0\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## String Concatenation\n\nOperators aren’t just for numbers! When a + operator is used on two\nstrings, it appends the right string to the left string:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "//Example 1 :\nconsole.log(\"hi\" + \"ya\"); // Prints 'hiya'\n//Example 2:\nconsole.log(\"wo\" + \"ah\"); // Prints 'woah'\n//Example 3:\nconsole.log(\"I love to \" + \"code.\");\n// Prints 'I love to code.'\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "This process of appending one string to another is called concatenation. Notice in the third example above that we made sure to include a space at the end of the first string. The computer will join the strings exactly, so we must include the space we want between the two strings.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"front \" + \"space\");\n// Prints 'front space'\nconsole.log(\"back\" + \" space\");\n// Prints 'back space'\nconsole.log(\"no\" + \"space\");\n// Prints 'nospace'\nconsole.log(\"middle\" + \" \" + \"space\");\n// Prints 'middle space'\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "front space",
+                                "back space",
+                                "nospace",
+                                "middle space",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Just like with regular math, we can combine, or chain, our operations to get a final result:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"One\" + \", \" + \"two\" + \", \" + \"three!\");\n// Prints 'One, two, three!'\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "One, two, three!",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Properties\n\nWhen we introduce a new piece of data into a JavaScript program, the browser saves it as an instance of the data type. All data types have access to specific properties that are passed down to each instance. For example, every string instance has a property called length that stores the number of characters in that string. We can retrieve property information by appending the string with a period and the property name:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"Hello\".length); // Prints 5\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "5",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "The . is another operator! We call it the dot operator.\nIn the example above, the value saved to the length property is retrieved from the instance of the string, 'Hello'. The program prints 5 to the console because Hello has five characters in it\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Methods\n\nRemember that methods are actions we can perform. Data types have access to specific methods that allow us to handle instances of that data type. JavaScript provides a number of string methods.\n\nWe call, or use these methods by appending an instance with:\n\n- a period (the dot operator)\n- the name of the method\n- opening and closing parentheses\n\nExample: 'example string'.methodName()\n\nDoes that syntax look familiar? When we use console.log(), we’re calling the .log() method on the console object. Let’s see console.log() and some real string methods in action!\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"hello\".toUpperCase()); // Prints 'HELLO'\nconsole.log(\"Hey\".startsWith(\"H\")); // Prints true\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "HELLO",
+                                "true",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Let’s look at each of the lines above:\n\n- On the first line, the .toUpperCase() method is called on the string instance 'hello'. The result is logged to the console. This method returns a string in all capital letters: 'HELLO'.\n- On the second line, the .startsWith() method is called on the string instance 'Hey'. This method also accepts the character 'H' as an input, or argument, between the parentheses. Since the string 'Hey' does start with the letter 'H', the method returns the boolean true.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "// Use a string method to log the following string without whitespace at the beginning and end of it.\nconsole.log(\"    Remove whitespace   \".trim());\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Remove whitespace",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Built-in objects\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "In addition to console, there are other objects built into JavaScript. Down the line, we’ll build our own objects, but for now, these built-in objects are full of useful functionality.\n\nFor example, if we wanted to perform more complex mathematical operations than arithmetic, JavaScript has the built-in Math object.\n\nThe great thing about objects is that they have methods! Let’s call the .random() method from the built-in Math object:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(Math.random()); // Prints a random number between 0 and 1\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "0.13390264914356265",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "In the example above, we called the .random() method by appending the object name with the dot operator, the name of the method, and opening and closing parentheses. This method returns a random number between 0 (inclusive) and 1 (exclusive).\n\nTo generate a random number between 0 and 50, we could multiply this result by 50, like so:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(Math.random() * 50); // Prints a random number between 0 and 50\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "29.14978799833563",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "The example above will likely evaluate to a decimal. To ensure the answer is a whole number, we can take advantage of another useful Math method, Math.floor().\n\nMath.floor() takes a decimal number and rounds it down to the nearest whole number. Math.floor() can be used to round down a random number like this:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(Math.floor(Math.random() * 50)); // Prints a random whole number between 0 and 50\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "22",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "In this case:\n\n1. Math.random() generates a random number between 0 and 1.\n2. We then multiply that number by 50, so now we have a number between 0 and 50.\n3. Then, Math.floor() rounds the number down to the nearest whole number.\n4. We use a console.log() statement to print the result.\n"
+            ],
+            "outputs": []
+        }
+    ]
+}

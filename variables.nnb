@@ -146,9 +146,16 @@
             "outputs": []
         },
         {
+            "language": "markdown",
+            "source": [
+                "# String Concatenation with Variables\n"
+            ],
+            "outputs": []
+        },
+        {
             "language": "typescript",
             "source": [
-                ""
+                "let myPet = \"armadillo\";\nconsole.log(\"I own a pet \" + myPet + \".\");\n// Output: 'I own a pet armadillo.'\n"
             ],
             "outputs": []
         }
