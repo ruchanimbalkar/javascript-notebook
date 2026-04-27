@@ -1,0 +1,62 @@
+{
+    "cells": [
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"apple\", \"banana\", \"cherry\"];\n//Add a new element at the end\nfruits.push(\"date\"); //[ 'apple', 'banana', 'cherry', 'date' ]\nconsole.log(fruits);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 'apple', 'banana', 'cherry', 'date' ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "// remove a particular element banana\nfruits.splice(fruits.indexOf(\"banana\"), 1);\nconsole.log(fruits);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 'apple', 'cherry', 'date' ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "//accessing elements using index\nconst firstFruit = fruits[0]; //apple\nconsole.log(firstFruit);\nconst lastFruit = fruits[fruits.length - 1]; //date\nconsole.log(lastFruit);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "apple",
+                                "date",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

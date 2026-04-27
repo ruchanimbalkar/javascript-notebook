@@ -1,0 +1,44 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "let myString = \"hello\";\n\nmyString[0] = \"H\";\n\nconsole.log(\"myString = \", myString);\n\nconst newString = myString.replace(\"h\", \"H\");\n\nconsole.log(\"newString = \", newString);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "myString =  hello",
+                                "newString =  Hello",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const greetingString = \"Hello World!\";\n//Accessing characters using indexing\nconst firstChar = greetingString[0]; //'H'\nconsole.log(firstChar);\nconst lastChar = greetingString[greetingString.length - 1]; //'!'\nconsole.log(lastChar);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "H",
+                                "!",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
