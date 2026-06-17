@@ -136,6 +136,7 @@
                             "mime": "application/vnd.code.notebook.stdout",
                             "value": [
                                 "Hiya, Jeannie",
+                                "Hi, Jamie",
                                 "Bye, Dino",
                                 ""
                             ]
