@@ -1,0 +1,71 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# First-class function\n\nA programming language is said to have First-class functions when functions in that language are treated like any other variable. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//Assigning a function to a variable\nconst foo = () => {\n  console.log(\"foobar\");\n};\nfoo(); // Invoke it using the variable\n//foobar\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "foobar",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "We assigned an Anonymous function to a Variable, then we used that variable to invoke the function by adding parentheses() at the end.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//Passing a function as an argument\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Practice\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const bakeCake = () => {\n  return \"The cake is baked and ready to eat.\";\n};\nconsole.log(bakeCake());\nconst cakeStatus = bakeCake();\nconsole.log(\" cake status : \", cakeStatus);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "The cake is baked and ready to eat.",
+                                " cake status :  The cake is baked and ready to eat.",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
