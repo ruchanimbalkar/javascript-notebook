@@ -8,7 +8,7 @@
             "outputs": []
         },
         {
-            "language": "typescript",
+            "language": "javascript",
             "source": [
                 "//Assigning a function to a variable\nconst foo = () => {\n  console.log(\"foobar\");\n};\nfoo(); // Invoke it using the variable\n//foobar\n"
             ],
@@ -34,9 +34,42 @@
             "outputs": []
         },
         {
-            "language": "typescript",
+            "language": "javascript",
             "source": [
-                "//Passing a function as an argument\n"
+                "//Passing a function as an argument\nfunction sayHello() {\n  return \"Hello, \";\n}\n\nfunction greeting(helloMessage, userName) {\n  console.log(helloMessage() + userName);\n}\n\n//Pass 'sayHello' as an argument to 'greeting' function\ngreeting(sayHello, \"JavaScript!\");\n//Hello, JavaScript!\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Hello, JavaScript!",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "We are passing our sayHello() function as an argument to the greeting() function, this explains how we are treating the function as a value.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "//Returning a function\nfunction sayHello() {\n  return () => {\n    console.log(\"Hello!\");\n  };\n}\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "In this example, we are returning a function from another function - We can return a function because functions in JavaScript are treated as values.\n"
             ],
             "outputs": []
         },
@@ -48,7 +81,7 @@
             "outputs": []
         },
         {
-            "language": "typescript",
+            "language": "javascript",
             "source": [
                 "const bakeCake = () => {\n  return \"The cake is baked and ready to eat.\";\n};\nconsole.log(bakeCake());\nconst cakeStatus = bakeCake();\nconsole.log(\" cake status : \", cakeStatus);\n"
             ],
@@ -60,6 +93,50 @@
                             "value": [
                                 "The cake is baked and ready to eat.",
                                 " cake status :  The cake is baked and ready to eat.",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function sayGreeting(greetingMessage) {\n  return () => {\n    console.log(greetingMessage + \" \");\n  };\n}\n\nfunction newGreeting(newName) {\n  const message = sayGreeting(\"Hi, There!\");\n  message();\n  console.log(newName);\n}\nnewGreeting(\"Sonali\");\n\nlet message = sayGreeting(\"Welcome!\");\nmessage();\n\nmessage = sayGreeting(\"Good Morning!\");\nmessage();\n\nmessage = sayGreeting(\"Good Afternoon!\");\nmessage();\n\nmessage = sayGreeting(\"Good Evening!\");\nmessage();\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Hi, There! ",
+                                "Sonali",
+                                "Welcome! ",
+                                "Good Morning! ",
+                                "Good Afternoon! ",
+                                "Good Evening! ",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function sayHiya() {\n  return \"Hiya, \";\n}\nfunction sayHi() {\n  return \"Hi, \";\n}\nfunction sayBye() {\n  return \"Bye, \";\n}\nfunction greeting(helloMessage, userName) {\n  console.log(helloMessage() + userName);\n}\ngreeting(sayHiya, \"Jeannie\");\ngreeting(sayHi, \"Jamie\");\ngreeting(sayBye, \"Dino\");\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Hiya, Jeannie",
+                                "Bye, Dino",
                                 ""
                             ]
                         }
