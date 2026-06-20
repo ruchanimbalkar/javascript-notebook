@@ -1,0 +1,113 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# loop\n\nA loop is a programming tool that is used to repeat a set of instructions. Iterate is a generic term that means “to repeat” in the context of loops. A loop will continue to iterate until a specified condition ( a stopping condition) is met.\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# For in loop\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const groceryCart = {\n  apples: 10,\n  mangoes: 12,\n  banans: 8,\n  guavas: 11,\n};\n\nfor (const fruit in groceryCart) {\n  console.log(fruit);\n}\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "apples",
+                                "mangoes",
+                                "banans",
+                                "guavas",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const groceryCart = {\n  apples: 10,\n  mangoes: 12,\n  banans: 8,\n  guavas: 11,\n};\n// To access the values:\nfor (const fruit in groceryCart) {\n  console.log(groceryCart[fruit]);\n}\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "10",
+                                "12",
+                                "8",
+                                "11",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const amazonCart = {\n  dolls: 3,\n  teaSets: 10,\n  dollBeds: 2,\n  dollPants: 4,\n};\n\n// 1. Declare a variable (item) to hold the object keys\nfor (const item in amazonCart) {\n  // 2. Access the value using bracket notation\n  const quantity = amazonCart[item];\n  console.log(quantity);\n}\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "3",
+                                "10",
+                                "2",
+                                "4",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# for of loop\n\nfor...of Loop\nA for...of loop iterates over an object’s values rather than their keys. This allows for direct access to the items, as opposed to index-reference. Examples of iterable objects include:\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const amazonCart = {\n  dolls: 3,\n  teaSets: 10,\n  dollBeds: 2,\n  dollPants: 4,\n};\nconst myEntries = Object.entries(amazonCart);\n\nfor (const [key, value] of myEntries) {\n  console.log(`${key}: ${value}`);\n}\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "dolls: 3",
+                                "teaSets: 10",
+                                "dollBeds: 2",
+                                "dollPants: 4",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
